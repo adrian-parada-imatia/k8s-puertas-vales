@@ -27,5 +27,5 @@ spec:
             service:
               name: {{ include "mosquitto.fullname" . }}-svc
               port:
-                number: {{ .Values.service.externalPort }}
+                number: {{ .Values.ports.websocket.port }}
 {{- end }}
