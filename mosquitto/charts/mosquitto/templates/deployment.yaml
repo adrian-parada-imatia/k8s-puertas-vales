@@ -64,11 +64,11 @@ spec:
             - name: data
               mountPath: {{ .Values.persistence.mountPath }}
               subPath: {{ .Values.persistence.subPath }}
-          {{- if and .Values.authentication.passwordEntries .Values.authentication.passwordFilePath }}
+          #{{- if and .Values.authentication.passwordEntries .Values.authentication.passwordFilePath }}
             - name: passwordfile
               mountPath: {{ .Values.authentication.passwordFilePath }}
               subPath: passwordfile
-          {{- end }}
+          #{{- end }}
           {{- if and .Values.authorization.acls .Values.authorization.aclfilePath }}
             - name: aclfile
               mountPath: {{ .Values.authorization.aclfilePath }}
