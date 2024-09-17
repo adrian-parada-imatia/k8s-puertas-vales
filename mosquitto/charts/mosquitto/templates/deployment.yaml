@@ -64,11 +64,9 @@ spec:
             - name: data
               mountPath: {{ .Values.persistence.mountPath }}
               subPath: {{ .Values.persistence.subPath }}
-          #{{- if and .Values.authentication.passwordEntries .Values.authentication.passwordFilePath }}
             - name: passwordfile
               mountPath: {{ .Values.authentication.passwordFilePath }}
               subPath: passwordfile
-          #{{- end }}
           {{- if and .Values.authorization.acls .Values.authorization.aclfilePath }}
             - name: aclfile
               mountPath: {{ .Values.authorization.aclfilePath }}
@@ -88,11 +86,9 @@ spec:
         {{- else }}
           emptyDir: {}
         {{- end }}
-      #{{- if and .Values.authentication.passwordEntries .Values.authentication.passwordFilePath }}
         - name: passwordfile
           secret:
             secretName: mosquitto-passwordfile-secret
-      #{{- end }}
       {{- if and .Values.authorization.acls .Values.authorization.aclfilePath }}
         - name: aclfile
           secret:
