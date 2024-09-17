@@ -100,12 +100,12 @@ authorization:
 
 existingConfigMap: ""
 config: |
-  persistence true
-  persistence_location $HOME/puertas_vales/mosquitto
   log_dest stdout
   listener 1883
   listener 9090
   protocol websockets
+  allow_anonymous false
+
 
 ## Additional volumes.
 extraVolumes: []
