@@ -102,8 +102,7 @@ existingConfigMap: ""
 config: |
   log_dest stdout
   listener 1883
-  listener 9090
-  protocol websockets
+  password_file /etc/mosquitto/passwordfile
   allow_anonymous false
 
 
