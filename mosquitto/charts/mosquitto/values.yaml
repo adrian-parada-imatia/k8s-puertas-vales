@@ -125,6 +125,6 @@ ingress:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: 'true'
     cert-manager.io/cluster-issuer: cert-manager-letsencrypt-production-route53
-  host: mosquitto.imatia.cloud
+  host: mosquitto.prod.imatia.cloud
   tls:
     secretName: mosquitto-tls-secret
