@@ -38,7 +38,7 @@ global:
       secretKeys:
         adminPasswordKey: "adminpassword"
         userPasswordKey: "password"
-        replicationPasswordKey: ""
+        replicationPasswordKey: "replicationpassword"
     ## @param global.postgresql.service.ports.postgresql PostgreSQL service port (overrides `service.ports.postgresql`)
     ##
     service:
