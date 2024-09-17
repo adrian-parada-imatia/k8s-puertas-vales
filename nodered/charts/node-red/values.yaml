@@ -176,7 +176,7 @@ ingress:
   # --  Ingress TLS configuration
   tls:
     # -- Secret name for the certificate
-    - secretName: nodered-tls
+    secretName: nodered-tls
     # -- Hostnames for the Ingress
     hosts: nodered.imatia.cloud
     # -- Certificate used by the Cert-Manager
