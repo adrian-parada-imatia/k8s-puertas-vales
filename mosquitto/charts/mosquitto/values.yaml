@@ -20,7 +20,7 @@ serviceAccount:
 service:
   type: ClusterIP
   annotations: {}
-    # metallb.universe.tf/allow-shared-ip: pi-hole
+    #  metallb.universe.tf/allow-shared-ip: pi-hole
 
 ports:
   mqtt:
