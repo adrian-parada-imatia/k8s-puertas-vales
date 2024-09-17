@@ -104,6 +104,8 @@ config: |
   listener 1883
   password_file /etc/mosquitto/passwordfile
   allow_anonymous false
+  listener 9090
+  protocol websockets
 
 
 ## Additional volumes.
