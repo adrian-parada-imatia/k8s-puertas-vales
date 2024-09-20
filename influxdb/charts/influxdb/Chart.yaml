@@ -9,5 +9,5 @@ appVersion: 1.0.0
 
 dependencies:
   - name: influxdb
-    version: 2.7.10
+    version: 6.3.20
     repository: https://charts.bitnami.com/bitnami
