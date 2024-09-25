@@ -164,7 +164,7 @@ node-red:
     annotations:
       kubernetes.io/ingress.class: nginx
       kubernetes.io/tls-acme: "true"
-      cert-manager.io/issuer: cert-manager-letsencrypt-production-route53
+      cert-manager.io/ClusterIssuer: cert-manager-letsencrypt-production-route53
     hosts:
       #  Ingress accepted hostnames
       - host: nodered.prod.imatia.cloud
