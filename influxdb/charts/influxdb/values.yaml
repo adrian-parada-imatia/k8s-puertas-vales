@@ -306,10 +306,10 @@ influxdb:
     ##
     resources:
       requests:
-        cpu: 100
+        cpu: 1
         memory: 512Mi
       limits:
-        cpu: 300
+        cpu: 3
         memory: 512Mi
     ## @param influxdb.command Override default container command (useful when using custom images)
     ##
