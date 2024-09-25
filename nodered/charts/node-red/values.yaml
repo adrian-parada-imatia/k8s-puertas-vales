@@ -167,22 +167,23 @@ node-red:
       cert-manager.io/issuer: cert-manager-letsencrypt-production-route53
     hosts:
       #  Ingress accepted hostnames
-      - nodered.prod.imatia.cloud
+      - host: nodered.prod.imatia.cloud
         paths:
-            # -- The base path
+        # -- The base path
           - path: /
-            # --  Ingress type of path
+        # --  Ingress type of path
             pathType: ImplementationSpecific
     # --  Ingress TLS configuration
     tls:
       # -- Secret name for the certificate
-      secretName: nodered-tls
+      - secretName: nodered-tls
       # -- Hostnames for the Ingress
-      hosts: nodered.prod.imatia.cloud
+        hosts: 
+        - nodered.prod.imatia.cloud
       # -- Certificate used by the Cert-Manager
-      # certificate:
+        certificate:
       # -- Enable certificate
-      #   enabled: true
+          enabled: false
       # -- Name of the certificate default: `$fullname-cert-$index`
       #   name: ""
       # -- Reference of ClusterIssuers or Issuer
