@@ -130,7 +130,7 @@ metrics:
 
 persistence:
   # -- Use persistent volume to store data
-  enabled: true
+  enabled: "true"
   ## node-red data Persistent Volume Storage Class
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -150,7 +150,7 @@ persistence:
   # -- Size of persistent volume claim
   size: 15Gi
   # -- ## Keep a created Persistent volume claim when uninstalling the helm chart (default: false)
-  keepPVC: true
+  keepPVC: "true"
 
 # -- containers which are run before the app containers are started
 initContainers: []
