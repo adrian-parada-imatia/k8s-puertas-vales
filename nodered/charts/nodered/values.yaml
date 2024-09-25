@@ -2,7 +2,7 @@
   # This is a YAML-formatted file.
   # Declare variables to be passed into your templates.
 
-node-red:
+nodered:
   # -- Specifies the strategy used to replace old Pods by new ones, default: `RollingUpdate`
   deploymentStrategy: ""
   image:
@@ -185,13 +185,13 @@ node-red:
       # -- Enable certificate
           enabled: false
       # -- Name of the certificate default: `$fullname-cert-$index`
-      #   name: ""
+          name: ""
       # -- Reference of ClusterIssuers or Issuer
-      #   issuerRef:
+          issuerRef:
       # -- Kind of the Issuer
-      #     kind: ClusterIssuer
+           kind: ClusterIssuer
       # -- Name of the Issuer
-      #     name: "test"
+           name: "cert-manager-letsencrypt-production-route53"
 
   # -- Liveness probe for the Deployment
   livenessProbe:
