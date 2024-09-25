@@ -139,7 +139,7 @@ persistence:
   ##   GKE, AWS & OpenStack)
   ##
   # -- Type of persistent volume claim
-  storageClass: ""
+  storageClass: "gp2"
   ##
   ## If you want to reuse an existing claim, you can pass the name of the PVC using
   ## the existingClaim variable
