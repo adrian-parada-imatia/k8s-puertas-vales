@@ -74,7 +74,7 @@ influxdb:
     enabled: true
     ## @param auth.usePasswordFiles Whether to use files to provide secrets instead of env vars.
     ##
-    usePasswordFiles: true
+    usePasswordFiles: false
     ## InfluxDB&trade; admin credentials
     ##
     admin:

@@ -44,7 +44,7 @@ persistence:
   ##   GKE, AWS & OpenStack)
   ##
   # storageClass: "-"
-  size: 15Gi
+  size: 5Gi
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
